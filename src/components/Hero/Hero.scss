@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=Lora:ital@1&display=swap");
+$bl-color: #22bad9;
+
+section {
+  height: 937px;
+  background-position: 50% 50%;
+}
+
+#home {
+  background: url("../../assets/images/hero_bg.jpg") no-repeat center center;
+  -webkit-background-attachment: fixed;
+  background-attachment: fixed;
+  background-color: #222;
+  background-size: cover;
+  padding: 0;
+  position: relative;
+}
+
+#home:before {
+  content: "";
+  background-color: rgba(26, 30, 35, 0.85);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.intro {
+  position: absolute;
+  width: 100%;
+  top: 60%;
+  left: 0;
+  text-align: center;
+  -webkit-transform: translate(0%, -50%);
+  -moz-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  -o-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+  padding: 0 15px;
+}
+
+.intro h4 {
+  color: green;
+  line-height: 1.7;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+}
+.flash {
+  color: $bl-color;
+  font-weight: bold;
+  background-color: greenyellow;
+  border-radius: 50%;
+  padding: 10px;
+  animation-name: blinker;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  @keyframes blinker {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+// Welcome glowing CSS :
+
+.welcome-container {
+  height: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.beautiful {
+  color: whitesmoke;
+  font-family: Quicksand;
+  font-size: 6rem;
+  letter-spacing: 11px;
+  text-shadow: 0px 0px 25px hotpink, 0px 0px 25px rgb(0, 0, 191),
+    0px 0px 25px rgb(0, 0, 191), 0px 0px 25px rgb(0, 0, 191);
+}
+
+#WE,
+#CO,
+#L,
+#ME {
+  animation: flicker 2s infinite;
+  animation-delay: 1s;
+}
+@keyframes flicker {
+  0% {
+    text-shadow: 0px 0px 0px transparent;
+    opacity: 0.3;
+  }
+  50% {
+    text-shadow: 0px 0px 0px transparent;
+    opacity: 0.3;
+  }
+  100% {
+    text-shadow: 0px 0px 25px hotpink, 0px 0px 25px rgb(0, 0, 191),
+      0px 0px 25px rgb(0, 0, 191), 0px 0px 25px rgb(0, 0, 191);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,40 @@
+import React from 'react';
+import { MDBContainer, MDBRow, MDBCol, MDBBtn } from "mdbreact";
+import './About.scss';
+import profile from '../../assets/images/about_me.jpg'
+
+export default function About() {
+    return (
+        <section className="about">
+            <MDBContainer>
+                <MDBRow>
+                <MDBCol size="6" >
+                    <div className="section-title" >
+                        <div className="section-subtitle" >About Me</div>
+                    </div>
+                    <div className="about-item" >
+                        <p>
+                            My name is <a href="https://www.linkedin.com/in/mohamed-assalla-dicko-ba0892b7/" target="_blank" ><span className="underline">Mohamed Assalla Dicko </span></a><br/>
+                            Great fan of web developpement and website improving. <br/>
+                            I'm currently working on <a href="https://firebase.google.com/" target="_blank"><span className="underline">Firebase</span></a> and 
+                            <a href="https://reactjs.org/"><span className="underline" target="_blank"> ReactJS</span></a> projects.<br/>
+                            I'm learning <a href="https://www.gatsbyjs.org/" target="_blank" ><span className="underline">Gatsby JS</span></a>  and improving my NodeJS Skills . <br/>
+                            All the JS stuff is my daily bread-and butter .
+                        </p>
+                        <MDBBtn gradient="peach">Read More</MDBBtn>
+                    </div>
+                </MDBCol>
+                <MDBCol sm="4" >
+                    <div className="about-box" >
+                        <div className="box-overlay" ></div>
+                        <a href="https://github.com/dickosmad" target="blank">
+                            <img src={profile} alt="" />
+                        </a>
+                    </div>
+                </MDBCol>
+                </MDBRow>
+        </MDBContainer>
+    </section>
+        
+    )
+}
