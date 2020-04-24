@@ -4,14 +4,20 @@ $delicate: #d3cce3;
 // background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 $pinkToOrange: linear-gradient(to right, #8a2387, #e94057, #f27121);
 $preferedColor: linear-gradient(-225deg, #16181b 0%, #ffa99f 48%, #ff719a 100%);
+$standard: linear-gradient(to right, #ec008c, #fc6767);
+$blue: #035aa6;
+$chocolate: #584153;
+
 // logo styling
 .navbar-brand img {
   height: 40px;
   width: 40px;
 }
+
 .justify-content-around {
   justify-content: space-evenly !important;
 }
+
 .nice-gradient {
-  background: $preferedColor !important;
+  background: #584153 !important;
 }

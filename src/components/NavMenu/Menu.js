@@ -19,7 +19,7 @@ export default class Menu extends Component {
           <Router>
             <MDBNavbar color="nice-gradient"  className ="sticky-top" dark expand="md">
               <MDBNavbarBrand>
-                <img src={logo} alt="this is car image" />
+                <img src={logo} alt="Code_drop" />
               </MDBNavbarBrand>
               <MDBNavbarToggler onClick={this.toggleCollapse} />
               <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
