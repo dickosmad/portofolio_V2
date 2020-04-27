@@ -5,10 +5,9 @@ import './Project.scss'
 export default function Project() {
     return (
     <section className="project">
-        <div className="section-title-skills" >
+        <div className="section-title-project" >
                <p className="gradient-text" >
-               <GrProjects size='4.3rem' color='blue'/>
-                   Projects</p> 
+                   Projects :</p> 
         </div>
         <div className="project-card">
             <div className="card">
@@ -29,7 +28,7 @@ export default function Project() {
                 <div className="card-content" >
                     <div className="card-display">
                         <GrProjects  color="blue" />
-                        <h2>Association  project</h2>
+                        <h2>TODOS IMPROVED </h2>
                     </div>
                     <div className="card-hover" >
                         <h2>Second Project</h2>
@@ -43,7 +42,7 @@ export default function Project() {
                 <div className="card-content" >
                     <div className="card-display">
                         <GrProjects  color="blue" />
-                        <h2>Block project project</h2>
+                        <h2>BLOG project</h2>
                     </div>
                     <div className="card-hover" >
                         <h2>First Project</h2>

@@ -1,17 +1,40 @@
 .project {
     padding-top: 50px;
     height: 890px;
-    background: url(../../assets/images/project_me.png) fixed no-repeat;
-    background-size: cover;
+    background: linear-gradient(45deg, rgba(210, 66, 192, 0.18), #acb5bd);
 }
 
 .project-card {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     text-align: center;
     align-items: center;
+}
+
+.section-title-project {
+    padding: 20px;
+    margin: 71px;
+    text-align: center;
+    margin-bottom: 37px;
+    font-family: "Archivo Black ", sans-serif;
+    padding-left: 7px;
+    font-size: 2em;
+    line-height: 1;
+    text-transform: uppercase;
+
+    p.gradient-text {
+        font-size: 2em;
+        background-color: red;
+        background-image: linear-gradient(45deg, #007bff, rgba(0, 0, 0, 0.31));
+        background-size: 100%;
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+    }
 }
 
 .card {
@@ -44,6 +67,7 @@
 
 .card-display h2 {
     font-size: 30px;
+    margin: 70px auto;
 
 }
 

@@ -39,6 +39,9 @@ export default class Menu extends Component {
                   <MDBNavItem>
                     <MDBNavLink to="#!">Blog</MDBNavLink>
                   </MDBNavItem>
+                  <MDBNavItem>
+                    <MDBNavLink to="#!">Contact Me</MDBNavLink>
+                  </MDBNavItem>
                 </MDBNavbarNav>
               </MDBCollapse>
             </MDBNavbar>

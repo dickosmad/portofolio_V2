@@ -16,7 +16,7 @@ export default function About() {
                     <div className="about-item" >
                         <p>
                             My name is <a href="https://www.linkedin.com/in/mohamed-assalla-dicko-ba0892b7/" target="_blank" ><span className="underline">Mohamed Assalla Dicko </span></a><br/>
-                            Great fan of web developpement and website improving. <br/>
+                            Great fan of web development and website improving. <br/>
                             I'm currently working on <a href="https://firebase.google.com/" target="_blank"><span className="underline">Firebase</span></a> and 
                             <a href="https://reactjs.org/"><span className="underline" target="_blank"> ReactJS</span></a> projects.<br/>
                             I'm learning <a href="https://www.gatsbyjs.org/" target="_blank" ><span className="underline">Gatsby JS</span></a>  and improving my NodeJS Skills . <br/>

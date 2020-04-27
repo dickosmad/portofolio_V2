@@ -5,6 +5,7 @@ import "./index.css";
 import About from "./components/About/About";
 import Skill from "./components/Skills/Skill";
 import Project from "./components/Project/Project";
+import Contact from "./components/Contact/Contact";
 
 
 
@@ -17,6 +18,7 @@ class App extends Component {
           <About/>
           <Skill/>
           <Project/>
+          <Contact/>
           
       </>
     );
