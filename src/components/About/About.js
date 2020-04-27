@@ -1,5 +1,6 @@
 import React from 'react';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn } from "mdbreact";
+import { FaLinkedinIn , FaGithub,FaFreeCodeCamp,FaInstagram } from "react-icons/fa";
 import './About.scss';
 import profile from '../../assets/images/about_me.jpg'
 
@@ -8,7 +9,7 @@ export default function About() {
         <section className="about">
             <MDBContainer>
                 <MDBRow>
-                <MDBCol size="6" >
+                <MDBCol size="6">
                     <div className="section-title" >
                         <div className="section-subtitle" >About Me</div>
                     </div>
@@ -21,7 +22,15 @@ export default function About() {
                             I'm learning <a href="https://www.gatsbyjs.org/" target="_blank" ><span className="underline">Gatsby JS</span></a>  and improving my NodeJS Skills . <br/>
                             All the JS stuff is my daily bread-and butter .
                         </p>
-                        <MDBBtn gradient="peach">Read More</MDBBtn>
+                        <MDBBtn gradient="peach">Learn More</MDBBtn>
+                        <div style={{paddingTop:40}} className="social-icons">
+                           <p> <span>Find me </span>: 
+                            <a><FaLinkedinIn   size="1.5rem" /></a>
+                            <a href="https://github.com/dickosmad" target="blank" ><FaGithub size="1.5rem" /></a>
+                            <a><FaFreeCodeCamp size="1.5rem"  /></a>
+                            <a><FaInstagram size="1.5rem" /></a>
+                            </p> 
+                        </div>
                     </div>
                 </MDBCol>
                 <MDBCol sm="4" >

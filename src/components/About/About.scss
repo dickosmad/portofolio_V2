@@ -1,3 +1,6 @@
+$rose: linear-gradient(120deg, #fa84c9b2 0%, #c61af1 100%);
+$green: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+
 .about {
     padding-top: 70px;
     height: 890px;
@@ -8,7 +11,7 @@
 .section-title {
     margin-top: 37px;
     margin-bottom: 37px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     padding-left: 7px;
     font-size: 2em;
     line-height: 1;
@@ -19,13 +22,12 @@
 .about-item {
     p {
         line-height: 2;
-        font-size: 20px
+        font-size: 20px;
     }
 
     a {
         color: black;
     }
-
 }
 
 .underline {
@@ -41,8 +43,7 @@
 }
 
 .about-box {
-    box-shadow: 6px 6px 41px #888,
-        6px 6px 0px hotpink;
+    box-shadow: 6px 6px 41px #888, 6px 6px 0px hotpink;
     width: 400px;
     height: 400px;
     position: relative;
@@ -64,12 +65,12 @@
         -ms-filter: saturate(0);
 
         &:hover {
-            filter: saturate(1)
+            filter: saturate(1);
         }
     }
 
     &:before {
-        content: '';
+        content: "";
         margin-top: -63px;
         margin-left: -80px;
         position: absolute;
@@ -78,4 +79,51 @@
         background: url(../../assets/images/about_me.jpg) no-repeat cover;
         transform: rotate(45deg);
     }
+}
+
+.social-icons {
+    p span {
+        font-size: 1.2em;
+        font-family: serif;
+        font-style: italic;
+        border-bottom: 3px solid #e933c291;
+    }
+
+
+    a {
+        margin: 0px 20px 0 20px;
+        background: #e933c291;
+        display: inline-flex;
+        height: 60px;
+        width: 60px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border-radius: 50%;
+        top: 1px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+        transition: .3s cubic-bezier(0.11, 1.31, 1, 1);
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 45px;
+            height: 45px;
+            color: black;
+            background: linear-gradient(0deg, #ddd, #fff);
+            border-radius: 50%;
+            transition: .3s ease-in;
+            z-index: 1;
+        }
+
+        &:hover {
+            box-shadow: 0 2px 15px rgba(0, 0, 0, .3);
+        }
+    }
+}
+
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+    z-index: 2;
 }
