@@ -9,10 +9,23 @@ export default function About() {
         <section className="about">
             <MDBContainer>
                 <MDBRow>
-                <MDBCol size="6">
-                    <div className="section-title" >
-                        <div className="section-subtitle" >About Me</div>
+                    <MDBCol sm="8">
+                        <div className="section-title" >
+                            <div className="section-subtitle" >About Me</div>
+                        </div>
+                    </MDBCol>
+                </MDBRow>
+                <MDBRow>    
+                <MDBCol  xs="12" sm="12" md="12" lg="6" >
+                    <div className="about-box" >
+                        <div className="box-overlay" ></div>
+                        <a href="https://github.com/dickosmad" target="blank">
+                            <img src={profile} alt="" />
+                        </a>
                     </div>
+                </MDBCol>
+                <MDBCol  sm="12" md="12" lg="6" xs="12" >
+                   
                     <div className="about-item" >
                         <p>
                             My name is <a href="https://www.linkedin.com/in/mohamed-assalla-dicko-ba0892b7/" target="_blank" ><span className="underline">Mohamed Assalla Dicko </span></a><br/>
@@ -23,6 +36,8 @@ export default function About() {
                             All the JS stuff is my daily bread-and butter .
                         </p>
                         <MDBBtn gradient="peach">Learn More</MDBBtn>
+                        <MDBRow>
+                        <MDBCol xs="12" sm="12" md="12" lg="12" sm="12"> 
                         <div style={{paddingTop:40}} className="social-icons">
                            <p> <span>Find me </span>: 
                             <a><FaLinkedinIn   size="1.5rem" /></a>
@@ -31,14 +46,10 @@ export default function About() {
                             <a><FaInstagram size="1.5rem" /></a>
                             </p> 
                         </div>
-                    </div>
-                </MDBCol>
-                <MDBCol sm="4" >
-                    <div className="about-box" >
-                        <div className="box-overlay" ></div>
-                        <a href="https://github.com/dickosmad" target="blank">
-                            <img src={profile} alt="" />
-                        </a>
+                        </MDBCol>
+                        </MDBRow>
+                        
+                       
                     </div>
                 </MDBCol>
                 </MDBRow>

@@ -49,7 +49,7 @@ $green: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
     position: relative;
     overflow: hidden;
     margin-top: 100px;
-    margin-left: 135px;
+    margin-left: -auto;
     -ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -126,4 +126,89 @@ svg {
     overflow: hidden;
     vertical-align: middle;
     z-index: 2;
+}
+
+@media (max-width:1200px) and (min-width:992px) {
+    .about-box {
+        width: 300px;
+        height: 300px;
+
+        img {
+            overflow: hidden;
+            height: 300px;
+            width: 300px;
+        }
+
+        &:before {
+            width: 350px;
+            height: 350px;
+        }
+    }
+
+    // social icons 
+
+    .social-icons {
+
+
+        a {
+            height: 50px;
+            width: 50px;
+        }
+
+        &::before {
+
+            width: 35px;
+            height: 35px;
+
+        }
+    }
+
+}
+
+
+
+@media (max-width: 990px) {
+    .about {
+
+        height: auto;
+    }
+
+    .about-box {
+
+        margin-bottom: 20px;
+        margin-left: - auto;
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    img {
+        overflow: hidden;
+        height: 200px;
+        width: 200px;
+
+    }
+
+    &:before {
+        width: 250px;
+        height: 250px;
+
+    }
+
+    //  Social Icons
+
+    .social-icons {
+        a {
+            height: 50px;
+            width: 50px;
+        }
+
+        &::before {
+
+            width: 35px;
+            height: 35px;
+
+        }
+    }
+
 }

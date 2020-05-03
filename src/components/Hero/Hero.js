@@ -30,13 +30,13 @@ export default function Hero() {
                 ~ I'm a WEBDEVELO<Typist.Delay ms={50} />PER
               <Typist.Backspace count={9} delay={1000} />
               <Typist.Delay ms={750} />
-              <span style={{color:'hotpink'}} >DESIGNER ✍</span>
+              <span style={{color:'hotpink'}} >DESIGNER too ✍</span>
               <Typist.Delay ms={1250} />
               <br /><br />
               ~ I love : <span style={{color:'hotpink'}} >Javascript , ReactJS and NodeJS 😍</span> 
                <Typist.Delay ms={1250} />
               <br /><br />
-               <a href="#" >~ Moto: Knowledge without sharing is nothing ✌</a> 
+               <a href="#" style={{color:'hotpink'}}>~ Moto: Knowledge without sharing is nothing ✌</a> 
               <Typist.Delay ms={1250} />
               <br /><br />
               <span> <a href="#" className="flash">👇</a></span>

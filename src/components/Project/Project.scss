@@ -7,7 +7,7 @@
 .project-card {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-evenly;
     text-align: center;
     align-items: center;
