@@ -98,3 +98,21 @@
 .card:hover .card-hover {
     display: block;
 }
+
+@media (max-width: 1833px) {
+    .project {
+
+        height: auto;
+    }
+}
+
+@media (max-width: 990px) {
+    .project-card {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        text-align: center;
+        align-items: center;
+    }
+}

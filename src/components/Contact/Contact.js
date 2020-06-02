@@ -13,10 +13,10 @@ export default class Contact extends Component {
             </div>   
             <MDBContainer>
               <MDBRow>
-                <MDBCol md="6">
-                <form>
+                <MDBCol md="6" lg="6" xs="12">
+                <form className="form-style" >
                    
-                    <div className="white-text"style={{transform: "translateX(50%)"}} >
+                    <div className="white-text" >
                     <MDBInput label="Your name" icon="user" group type="text" validate error="wrong"
                         success="right" />
                     <MDBInput label="Your email" icon="envelope" group type="email" validate error="wrong"
@@ -24,8 +24,8 @@ export default class Contact extends Component {
                     <MDBInput label="Subject" icon="tag" group type="text" validate error="wrong" success="right" />
                     <MDBInput type="textarea" rows="2" label="Your message" icon="pencil-alt" />
                     </div>
-                    <div className="text-center" style={{transform: "translateX(50%)"}} >
-                    <MDBBtn className="btn btn-outline-purple" color="secondary">
+                    <div className="text-center" >
+                    <MDBBtn className="btn btn-outline-purple" color="secondary" style={{fontSize:'1rem'}} >
                         Send
                         <MDBIcon far icon="paper-plane" className="ml-1" />
                     </MDBBtn>

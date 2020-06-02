@@ -35,7 +35,7 @@ export default function About() {
                             I'm learning <a href="https://www.gatsbyjs.org/" target="_blank" ><span className="underline">Gatsby JS</span></a>  and improving my NodeJS Skills . <br/>
                             All the JS stuff is my daily bread-and butter .
                         </p>
-                        <MDBBtn gradient="peach">Learn More</MDBBtn>
+                        <MDBBtn gradient="peach" href="project.js" >See My Work</MDBBtn>
                         <MDBRow>
                         <MDBCol xs="12" sm="12" md="12" lg="12" sm="12"> 
                         <div style={{paddingTop:40}} className="social-icons">

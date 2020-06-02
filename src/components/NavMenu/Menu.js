@@ -25,13 +25,13 @@ export default class Menu extends Component {
               <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
                 <MDBNavbarNav>
                   <MDBNavItem active>
-                    <MDBNavLink to="#!">Home</MDBNavLink>
+                    <MDBNavLink to="">Home</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink to="#!">About Me</MDBNavLink>
+                    <MDBNavLink to="/about">About Me</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink to="#!">Skills</MDBNavLink>
+                    <MDBNavLink to="/skill">Skills</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
                     <MDBNavLink to="#!">Projects</MDBNavLink>

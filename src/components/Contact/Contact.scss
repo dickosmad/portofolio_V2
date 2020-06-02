@@ -4,3 +4,17 @@
   background: url(../../assets/images/contact_1.png) fixed no-repeat;
   background-size: cover;
 }
+
+.md-form .prefix~label {
+  color: #f8f9faad !important;
+}
+
+form.form-style {
+  transform: translateX(50%)
+}
+
+@media (max-width: 768px) {
+  form.form-style {
+    transform: none
+  }
+}
