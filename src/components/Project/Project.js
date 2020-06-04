@@ -19,7 +19,7 @@ export default function Project() {
                     <div className="card-hover" >
                         <h2>Second Project</h2>
                         <p>This my first portfolio project build with HTML ,CSS ,JS</p>
-                        <a href="">Check Link</a>
+                        <a href="!#">Check Link</a>
                     </div>
                 </div>      
             </div>
@@ -33,7 +33,7 @@ export default function Project() {
                     <div className="card-hover" >
                         <h2>Second Project</h2>
                         <p>This my first portfolio project build with HTML ,CSS ,JS</p>
-                        <a href="">Check Link</a>
+                        <a href="!#">Check Link</a>
                     </div>
                 </div>      
             </div>
@@ -47,7 +47,7 @@ export default function Project() {
                     <div className="card-hover" >
                         <h2>First Project</h2>
                         <p>This my first portfolio project build with HTML ,CSS ,JS</p>
-                        <a href="">Check Link</a>
+                        <a href="!#">Check Link</a>
                     </div>
                 </div>      
             </div>

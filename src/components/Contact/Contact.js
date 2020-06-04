@@ -1,9 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon, MDBInput } from 'mdbreact';
 import './Contact.scss'
 
-export default class Contact extends Component {
-    render() {
+
+
+
+    const Contact = () => {
+    
         return (
         <section className="contact">
              <div className="section-title-skills" >
@@ -14,7 +17,7 @@ export default class Contact extends Component {
             <MDBContainer>
               <MDBRow>
                 <MDBCol md="6" lg="6" xs="12">
-                <form className="form-style" >
+                    <form className="form-style" >
                    
                     <div className="white-text" >
                     <MDBInput label="Your name" icon="user" group type="text" validate error="wrong"
@@ -30,12 +33,14 @@ export default class Contact extends Component {
                         <MDBIcon far icon="paper-plane" className="ml-1" />
                     </MDBBtn>
                     </div>
-                </form>
+                    </form>
                 </MDBCol>
-      </MDBRow>
-</MDBContainer>
+            </MDBRow>
+        </MDBContainer>
             
-        </section>
-        )
-    }
+    </section>
+    );
+    
 }
+
+export default  Contact ;

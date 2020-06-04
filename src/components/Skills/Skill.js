@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { FaReact } from "react-icons/fa";
-import { DiNodejs,DiFirebase,DiMongodb} from "react-icons/di";
-import { AiOutlineBranches} from "react-icons/ai";
-import { GrGatsbyjs} from "react-icons/gr";
+import { AiOutlineBranches } from "react-icons/ai";
 import html from '../../assets/images/html5.svg'
 import css from '../../assets/images/css.svg'
 import JS from '../../assets/images/js.svg'
@@ -30,28 +28,28 @@ export default class Skill extends Component {
                    SKILLS</p> 
             </div>
             <div className="skill-box">
-                <img src = {html} />
+                <img src = {html} alt={"html "} />
             </div>
             <div className="skill-box">
-                <img src = {css} />
+                <img src = {css} alt={"css "} />
             </div>
             <div className="skill-box">
-                <img src = {JS} />
+                <img src = {JS} alt={"JS"} />
             </div>
             <div className="skill-box">
-                <img src = {Firebase} />
+                <img src = {Firebase} alt={"Firebase "} />
             </div>
             <div className="skill-box">
-                <img src = {gatsby} />
+                <img src = {gatsby} alt={"Gatsby "} />
             </div>
             <div className="skill-box">
                 <FaReact size="8rem" color="blue" />
             </div>
             <div className="skill-box">
-                <img src = {node} />
+                <img src = {node} alt={"nodeJS"} />
             </div>
             <div className="skill-box">
-                <img src = {mongodb} />
+                <img src = {mongodb} alt={"Mongdb"} />
             </div>
              </section>
         )
