@@ -6,7 +6,7 @@ import profile from '../../assets/images/about_me.jpg'
 
 export default function About() {
     return (
-        <section className="about">
+        <section className="about" id="about" >
             <MDBContainer>
                 <MDBRow>
                     <MDBCol sm="8">

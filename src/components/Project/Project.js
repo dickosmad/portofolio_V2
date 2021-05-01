@@ -1,58 +1,50 @@
-import React from 'react'
-import { GrProjects} from "react-icons/gr";
-import './Project.scss'
+import React from "react";
+import "./Project.scss";
+import data from "./projectData";
 
 export default function Project() {
-    return (
-    <section className="project">
-        <div className="section-title-project" >
-               <p className="gradient-text" >
-                   Projects :</p> 
-        </div>
-        <div className="project-card">
-            <div className="card">
-                <div className="card-content" >
-                    <div className="card-display">
-                        <GrProjects  color="blue" />
-                        <h2>Association  project</h2>
+  return (
+    <section className="project" id="project">
+      <div className="section-title-project">
+        <p className="gradient-text">Projects :</p>
+      </div>
+      <div className="project-card">
+        {data &&
+          data.map((project) => {
+            return (
+              <>
+                <div class="project__wrapper">
+                  <div className="project__front">
+                    <div className="project__title">
+                      <h4>{project.name} </h4>
                     </div>
-                    <div className="card-hover" >
-                        <h2>Second Project</h2>
-                        <p>This my first portfolio project build with HTML ,CSS ,JS</p>
-                        <a href="!#">Check Link</a>
+                    <div
+                      className="project__front_img"
+                      style={{
+                        borderBottom: ` 1px solid ${project.borderColor}`,
+                      }}
+                    >
+                      <img src={project.img} />
                     </div>
-                </div>      
-            </div>
-                {/* end of div */}
-            <div className="card">
-                <div className="card-content" >
-                    <div className="card-display">
-                        <GrProjects  color="blue" />
-                        <h2>TODOS IMPROVED </h2>
+                  </div>
+                  <div className="project__back">
+                    <div className="gradient_bar"></div>
+                    <div className="project__back_content">
+                      <p>
+                        {" "}
+                        labore asperiores voluptates, saepe voluptatum ad.
+                        Obcaecati dicta nam distinctio labore, molestiae sed.{" "}
+                      </p>
+                      <div className="project__site">
+                        <p> dickosidi.dev </p>
+                      </div>
                     </div>
-                    <div className="card-hover" >
-                        <h2>Second Project</h2>
-                        <p>This my first portfolio project build with HTML ,CSS ,JS</p>
-                        <a href="!#">Check Link</a>
-                    </div>
-                </div>      
-            </div>
-                {/* end of div */}
-            <div className="card">
-                <div className="card-content" >
-                    <div className="card-display">
-                        <GrProjects  color="blue" />
-                        <h2>BLOG project</h2>
-                    </div>
-                    <div className="card-hover" >
-                        <h2>First Project</h2>
-                        <p>This my first portfolio project build with HTML ,CSS ,JS</p>
-                        <a href="!#">Check Link</a>
-                    </div>
-                </div>      
-            </div>
-                {/* end of div */}
-        </div>
+                  </div>
+                </div>
+              </>
+            );
+          })}
+      </div>
     </section>
-    )
+  );
 }

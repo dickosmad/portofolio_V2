@@ -8,7 +8,7 @@ import './Contact.scss'
     const Contact = () => {
     
         return (
-        <section className="contact">
+        <section className="contact" id="contact" >
              <div className="section-title-skills" >
              
                <span className="gradient-text" >

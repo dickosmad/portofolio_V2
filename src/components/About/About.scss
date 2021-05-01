@@ -2,262 +2,239 @@ $rose: linear-gradient(120deg, #fa84c9b2 0%, #c61af1 100%);
 $green: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
 
 .about {
-    padding-top: 70px;
-    height: 890px;
-    background: url(../../assets/images/about-background.jpg) fixed no-repeat;
-    background-size: cover;
+  padding-top: 70px;
+  height: 950px;
+  background: url(/images/about-background.jpg) fixed no-repeat;
+  background-size: cover;
 }
 
 .section-title {
-    margin-top: 37px;
-    margin-bottom: 37px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    padding-left: 7px;
-    font-size: 2em;
-    line-height: 1;
-    text-transform: uppercase;
-    border-left: 5px solid #ad1515;
+  margin-top: 37px;
+  margin-bottom: 37px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 7px;
+  font-size: 2em;
+  line-height: 1;
+  text-transform: uppercase;
+  border-left: 5px solid #ad1515;
 }
 
 .about-item {
-    p {
-        line-height: 2;
-        font-size: 20px;
-    }
+  p {
+    line-height: 2;
+    font-size: 20px;
+  }
 
-    a {
-        color: black;
-    }
+  a {
+    color: black;
+  }
 }
 
 .underline {
-    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 0.2em;
-    background-position: 0 110%;
-    transition: background-size 0.25s ease-in;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 110%;
+  transition: background-size 0.25s ease-in;
 
-    &:hover {
-        background-size: 100% 88%;
-    }
+  &:hover {
+    background-size: 100% 88%;
+  }
 }
 
 .about-box {
-    box-shadow: 6px 6px 41px #888, 6px 6px 0px hotpink;
-    width: 400px;
-    height: 400px;
-    position: relative;
+  box-shadow: 6px 6px 41px #888, 6px 6px 0px hotpink;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 100px;
+  margin-left: -auto;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+  img {
     overflow: hidden;
-    margin-top: 100px;
-    margin-left: -auto;
-    -ms-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
+    height: 400px;
+    width: 400px;
+    filter: saturate(0);
+    -webkit-filter: saturate(0);
+    -moz-filter: saturate(0);
+    -o-filter: saturate(0);
+    -ms-filter: saturate(0);
+
+    &:hover {
+      filter: saturate(1);
+    }
+  }
+
+  &:before {
+    content: "";
+    margin-top: -63px;
+    margin-left: -80px;
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background: url(../../assets/images/about_me.jpg) no-repeat cover;
     transform: rotate(45deg);
-
-    img {
-        overflow: hidden;
-        height: 400px;
-        width: 400px;
-        filter: saturate(0);
-        -webkit-filter: saturate(0);
-        -moz-filter: saturate(0);
-        -o-filter: saturate(0);
-        -ms-filter: saturate(0);
-
-        &:hover {
-            filter: saturate(1);
-        }
-    }
-
-    &:before {
-        content: "";
-        margin-top: -63px;
-        margin-left: -80px;
-        position: absolute;
-        width: 450px;
-        height: 450px;
-        background: url(../../assets/images/about_me.jpg) no-repeat cover;
-        transform: rotate(45deg);
-    }
+  }
 }
 
 .social-icons {
-    p span {
-        font-size: 1.2em;
-        font-family: serif;
-        font-style: italic;
-        border-bottom: 3px solid #e933c291;
+  p span {
+    font-size: 1.2em;
+    font-family: serif;
+    font-style: italic;
+    border-bottom: 3px solid #e933c291;
+  }
+
+  a {
+    margin: 0px 20px 0 20px;
+    background: #e933c291;
+    display: inline-flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+    top: 1px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s cubic-bezier(0.11, 1.31, 1, 1);
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 45px;
+      height: 45px;
+      color: black;
+      background: linear-gradient(0deg, #ddd, #fff);
+      border-radius: 50%;
+      transition: 0.3s ease-in;
+      z-index: 1;
     }
 
-
-    a {
-        margin: 0px 20px 0 20px;
-        background: #e933c291;
-        display: inline-flex;
-        height: 60px;
-        width: 60px;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        border-radius: 50%;
-        top: 1px;
-        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-        transition: .3s cubic-bezier(0.11, 1.31, 1, 1);
-
-        &::before {
-            content: "";
-            position: absolute;
-            width: 45px;
-            height: 45px;
-            color: black;
-            background: linear-gradient(0deg, #ddd, #fff);
-            border-radius: 50%;
-            transition: .3s ease-in;
-            z-index: 1;
-        }
-
-        &:hover {
-            box-shadow: 0 2px 15px rgba(0, 0, 0, .3);
-        }
+    &:hover {
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
     }
+  }
 }
 
 svg {
-    overflow: hidden;
-    vertical-align: middle;
-    z-index: 2;
+  overflow: hidden;
+  vertical-align: middle;
+  z-index: 2;
 }
 
-@media (max-width:1200px) and (min-width:992px) {
-    .about-box {
-        width: 300px;
-        height: 300px;
+@media (max-width: 1200px) and (min-width: 992px) {
+  .about-box {
+    width: 300px;
+    height: 300px;
 
-        img {
-            overflow: hidden;
-            height: 300px;
-            width: 300px;
-        }
-
-        &:before {
-            width: 350px;
-            height: 350px;
-        }
+    img {
+      overflow: hidden;
+      height: 300px;
+      width: 300px;
     }
 
-    // social icons 
+    &:before {
+      width: 350px;
+      height: 350px;
+    }
+  }
 
-    .social-icons {
+  // social icons
 
-
-        a {
-            height: 50px;
-            width: 50px;
-        }
-
-        &::before {
-
-            width: 35px;
-            height: 35px;
-
-        }
+  .social-icons {
+    a {
+      height: 50px;
+      width: 50px;
     }
 
+    &::before {
+      width: 35px;
+      height: 35px;
+    }
+  }
 }
-
-
 
 @media (max-width: 990px) {
-    .about {
+  .about {
+    height: auto;
+  }
 
-        height: auto;
+  .about-box {
+    margin-bottom: 20px;
+    margin-left: -auto;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  img {
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+  }
+
+  &:before {
+    width: 250px;
+    height: 250px;
+  }
+
+  //  Social Icons
+
+  .social-icons {
+    a {
+      height: 50px;
+      width: 50px;
     }
 
-    .about-box {
-
-        margin-bottom: 20px;
-        margin-left: - auto;
-        -ms-transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
+    &::before {
+      width: 35px;
+      height: 35px;
     }
-
-    img {
-        overflow: hidden;
-        height: 200px;
-        width: 200px;
-
-    }
-
-    &:before {
-        width: 250px;
-        height: 250px;
-
-    }
-
-    //  Social Icons
-
-    .social-icons {
-        a {
-            height: 50px;
-            width: 50px;
-        }
-
-        &::before {
-
-            width: 35px;
-            height: 35px;
-
-        }
-    }
-
+  }
 }
 
-// Small Screen (Iphone 6 and + )  
+// Small Screen (Iphone 6 and + )
 
+@media (max-width: 475px) {
+  .about {
+    height: auto;
+  }
 
-@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
-    .about {
+  .about-box {
+    margin-bottom: 20px;
+    margin-left: -auto;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
 
-        height: auto;
+  img {
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+  }
+
+  &:before {
+    width: 250px;
+    height: 250px;
+  }
+
+  //  Social Icons
+
+  .social-icons {
+    a {
+      height: 50px;
+      width: 50px;
     }
 
-    .about-box {
-
-        margin-bottom: 20px;
-        margin-left: - auto;
-        -ms-transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
+    &::before {
+      width: 35px;
+      height: 35px;
     }
-
-    img {
-        overflow: hidden;
-        height: 200px;
-        width: 200px;
-
-    }
-
-    &:before {
-        width: 250px;
-        height: 250px;
-
-    }
-
-    //  Social Icons
-
-    .social-icons {
-        a {
-            height: 50px;
-            width: 50px;
-        }
-
-        &::before {
-
-            width: 35px;
-            height: 35px;
-
-        }
-    }
-
+  }
 }

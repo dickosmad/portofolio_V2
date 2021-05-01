@@ -21,7 +21,7 @@ export default class Skill extends Component {
     render() {
         return (
 
-        <section className="skill">
+        <section className="skill" id="skill" >
              <div className="section-title-skills" >
                <p className="gradient-text" >
                <AiOutlineBranches size='4.3rem' color='hotpink' />

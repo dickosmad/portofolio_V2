@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
 import {
-    MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse } from "mdbreact";
-    import { BrowserRouter as Router } from 'react-router-dom';
-    import logo from '../../assets/images/code_drop.png'
+    MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavbarToggler, MDBCollapse } from "mdbreact";
+import { HashLink as Link } from 'react-router-hash-link'
+import {BrowserRouter as Router } from 'react-router-dom';
+import logo from '../../assets/images/code_drop.png'
 import "./Menu.scss"
+
 
 export default class Menu extends Component {
     state = {
@@ -17,7 +19,7 @@ export default class Menu extends Component {
       render() {
         return (
           <Router>
-            <MDBNavbar color="nice-gradient"  className ="sticky-top" dark expand="md">
+            <MDBNavbar color="nice-gradient" fixed="top"  dark expand="md">
               <MDBNavbarBrand>
                 <img src={logo} alt="Code_drop" />
               </MDBNavbarBrand>
@@ -25,22 +27,22 @@ export default class Menu extends Component {
               <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
                 <MDBNavbarNav>
                   <MDBNavItem active>
-                    <MDBNavLink to="">Home</MDBNavLink>
+                    <Link className='nav-link' to="/#app">Home</Link>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink to="/about">About Me</MDBNavLink>
+                   <Link smooth className='nav-link' to="/#about">About Me</Link>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink to="/skill">Skills</MDBNavLink>
+                    <Link smooth className='nav-link' to="/#skill">Skills</Link>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink to="#!">Projects</MDBNavLink>
+                    <Link smooth className='nav-link'  to="/#project">Projects</Link>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink to="#!">Blog</MDBNavLink>
+                    <Link  smooth className='nav-link' to="#!">Blog</Link>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink to="#!">Contact Me</MDBNavLink>
+                    <Link  smooth className='nav-link' to="#/contact">Contact Me</Link>
                   </MDBNavItem>
                 </MDBNavbarNav>
               </MDBCollapse>

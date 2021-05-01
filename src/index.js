@@ -6,23 +6,16 @@ import "mdbreact/dist/css/mdb.css";
 import {Switch, Route,  BrowserRouter as Router } from 'react-router-dom'
 import "./index.css";
 import App from "./App";
-
 import registerServiceWorker from './registerServiceWorker';
-import About from "./components/About/About";
-import Contact from "./components/Contact/Contact";
-import Skill from "./components/Skills/Skill";
 
-const routing = (
+const Rout = (
     <Router>
       <Switch>
         <Route exact path="/" component={App} />
-        <Route path="/about" component={About} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/skill" component={Skill} />
       </Switch>
     </Router>
   )
 
-ReactDOM.render( routing, document.getElementById('root'));
+ReactDOM.render( Rout, document.getElementById('root'));
 
 registerServiceWorker();
