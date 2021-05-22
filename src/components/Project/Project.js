@@ -30,13 +30,27 @@ export default function Project() {
                   <div className="project__back">
                     <div className="gradient_bar"></div>
                     <div className="project__back_content">
-                      <p>
-                        {" "}
-                        labore asperiores voluptates, saepe voluptatum ad.
-                        Obcaecati dicta nam distinctio labore, molestiae sed.{" "}
-                      </p>
+                      <div className="project__back__description">
+                        <div className="project__back__img">
+                          <a href={project.link} target="_blank">
+                            <img src={project.show} alt={project.name} />
+                          </a>
+                        </div>
+                        <p>{project.description}</p>
+                        <div className="stacks">
+                          <p>Stacks :</p>
+                          <div className="project_technos">
+                            {project.tools.map((tool) => (
+                              <li key={tool}>{tool}</li>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
                       <div className="project__site">
-                        <p> dickosidi.dev </p>
+                        <p>
+                          {" "}
+                          <a href={project.link}>{project.siteName} </a>
+                        </p>
                       </div>
                     </div>
                   </div>
