@@ -39,6 +39,7 @@ section {
   -o-transform: translate(0%, -50%);
   transform: translate(0%, -50%);
   padding: 0 15px;
+  margin-top: 40px;
 }
 
 .intro h4 {
@@ -46,6 +47,46 @@ section {
   line-height: 1.7;
   font-family: "Cormorant Garamond", serif;
   font-size: 25px;
+}
+.contact-icons {
+  margin-top: 50px;
+  p span {
+    font-size: 1em;
+    font-family: serif;
+    font-style: italic;
+    border-bottom: 3px solid #e933c291;
+  }
+
+  a {
+    margin: 0px 20px 0 20px;
+    background: #e933c291;
+    display: inline-flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+    top: 1px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s cubic-bezier(0.11, 1.31, 1, 1);
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 45px;
+      height: 45px;
+      color: black;
+      background: linear-gradient(0deg, #ddd, #fff);
+      border-radius: 50%;
+      transition: 0.3s ease-in;
+      z-index: 1;
+    }
+
+    &:hover {
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+    }
+  }
 }
 
 .flash {
@@ -126,3 +167,47 @@ section {
     letter-spacing: 8px;
   }
 }
+
+@media (max-width: 555px) {
+  .contact-icons {
+    margin-top: 50px;
+    p span {
+      font-size: 1em;
+      font-family: serif;
+      font-style: italic;
+      border-bottom: 3px solid #e933c291;
+    }
+  
+    a {
+      margin: 0px 10px 0 10px;
+      background: #e933c291;
+      display: inline-flex;
+      height: 30px;
+      width: 30px;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      border-radius: 50%;
+      top: 1px;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+      transition: 0.3s cubic-bezier(0.11, 1.31, 1, 1);
+  
+      &::before {
+        content: "";
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        color: black;
+        background: linear-gradient(0deg, #ddd, #fff);
+        border-radius: 50%;
+        transition: 0.3s ease-in;
+        z-index: 1;
+      }
+  
+      &:hover {
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+}
+
