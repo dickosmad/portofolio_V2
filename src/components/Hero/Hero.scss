@@ -171,7 +171,7 @@ section {
 
 @media (max-width: 555px) {
   .welcome-container {
-    height: 320px;
+    height: 360px;
 }
   .contact-icons {
     margin-top: 50px;
@@ -205,4 +205,23 @@ section {
     }
   }
 }
+@media (max-width:360px){
+  .contact-icons {
+    margin-top: 50px;
+   
+    a {
+      margin: 0px 9px 0 9px;
+      height: 40px;
+      width: 40px;
+      
+      &::before {
+        content: "";
+        position: absolute;
+        width: 25px;
+        height: 25px;
+      
+      }
+}
 
+  }
+}

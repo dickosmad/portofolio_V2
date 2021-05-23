@@ -211,7 +211,7 @@ svg {
     a {
       margin: 0px 10px 0 10px;
       height: 45px;
-    width: 45px;
+       width: 45px;
       
       &::before {
         content: "";
@@ -227,7 +227,7 @@ svg {
         z-index: 2;
         width: 1rem;
         height: 1rem;
-    }
+      }
     }
   }
 }
@@ -304,4 +304,15 @@ svg {
     }
   }
 }
+}
+@media (max-width:360px){
+  .section-title {
+    margin-top: -25px;
+    margin-bottom: 11px;
+}
+  .about-box {
+    margin-bottom: 30px;
+    width: 310px;
+    height: 340px;
+  }
 }
