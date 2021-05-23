@@ -1,12 +1,9 @@
 import React from "react";
 import "./Hero.scss";
 import Typist from "react-typist";
-import {
-  FaLinkedinIn,
-  FaGithub,
-  FaFreeCodeCamp,
-  FaInstagram,
-} from "react-icons/fa";
+import { FaGithub, FaCodepen } from "react-icons/fa";
+import { DiStackoverflow } from "react-icons/di";
+import { FiCodesandbox } from "react-icons/fi";
 
 export default function Hero() {
   return (
@@ -78,17 +75,33 @@ export default function Hero() {
                 <p>
                   {" "}
                   <span style={{ color: "white" }}>Find me </span>:
-                  <a href="https://www.linkedin.com/in/mohamed-assalla-dicko-ba0892b7/">
-                    <FaLinkedinIn size="1.5rem" />
+                  <a
+                    href="https://www.stackoverflow.com/users/15736112/dickosmad"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <DiStackoverflow size="1.5rem" />
                   </a>
-                  <a href="https://github.com/dickosmad" target="blank">
+                  <a
+                    href="https://github.com/dickosmad"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FaGithub size="1.5rem" />
                   </a>
-                  <a href="https://github.com/dickosmad">
-                    <FaFreeCodeCamp size="1.5rem" />
+                  <a
+                    href="https://codepen.io/dickosmad"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaCodepen size="1.5rem" />
                   </a>
-                  <a href="https://github.com/">
-                    <FaInstagram size="1.5rem" />
+                  <a
+                    href="https://codesandbox.io/dashboard/home?workspace=375dbe28-3a6a-4f56-92fe-0495ab8aebb0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FiCodesandbox size="1.5rem" />
                   </a>
                 </p>
               </div>

@@ -179,3 +179,26 @@
         height: auto;
     }
 }
+@media (max-width: 375px){
+    .skill {
+
+        height: auto;
+        display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .section-title-skills {
+        margin-top: 30px;
+        margin-bottom: 0;
+        padding: 0;
+      
+        p.gradient-text {
+            font-size: 1em;
+           
+    
+        }
+    
+    }
+}

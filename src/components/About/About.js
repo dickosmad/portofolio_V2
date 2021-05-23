@@ -83,7 +83,7 @@ export default function About() {
                   <div style={{ paddingTop: 40 }} className="social-icons">
                     <p>
                       {" "}
-                      <span>Find me </span>:
+                      <span>Follow me </span>:
                       <a href="https://www.linkedin.com/in/mohamed-assalla-dicko-ba0892b7/">
                         <FaLinkedinIn size="1.5rem" />
                       </a>

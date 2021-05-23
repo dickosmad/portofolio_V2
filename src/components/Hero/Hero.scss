@@ -5,6 +5,7 @@ $bl-color: #22bad9;
 section {
   height: 937px;
   background-position: cover;
+  overflow-x: hidden;
 }
 
 #home {
@@ -84,7 +85,7 @@ section {
     }
 
     &:hover {
-      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 2px 15px rgba(17, 17, 17, 0.418);
     }
   }
 }
@@ -118,7 +119,7 @@ section {
 // Welcome glowing CSS :
 
 .welcome-container {
-  height: 520px;
+  height: 420px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -169,6 +170,9 @@ section {
 }
 
 @media (max-width: 555px) {
+  .welcome-container {
+    height: 320px;
+}
   .contact-icons {
     margin-top: 50px;
     p span {
@@ -180,33 +184,24 @@ section {
   
     a {
       margin: 0px 10px 0 10px;
-      background: #e933c291;
-      display: inline-flex;
-      height: 30px;
-      width: 30px;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      border-radius: 50%;
-      top: 1px;
-      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-      transition: 0.3s cubic-bezier(0.11, 1.31, 1, 1);
-  
+      height: 40px;
+      width: 40px;
+      
       &::before {
         content: "";
         position: absolute;
-        width: 45px;
-        height: 45px;
-        color: black;
-        background: linear-gradient(0deg, #ddd, #fff);
-        border-radius: 50%;
-        transition: 0.3s ease-in;
-        z-index: 1;
+        width: 25px;
+        height: 25px;
+      
       }
-  
-      &:hover {
-        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-      }
+
+      svg {
+        overflow: hidden;
+        vertical-align: middle;
+        z-index: 2;
+        width: 1rem;
+        height: 1rem;
+    }
     }
   }
 }
