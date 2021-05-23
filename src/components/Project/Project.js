@@ -24,7 +24,7 @@ export default function Project() {
                         borderBottom: ` 1px solid ${project.borderColor}`,
                       }}
                     >
-                      <img src={project.img} />
+                      <img src={project.img} alt={project.name} />
                     </div>
                   </div>
                   <div className="project__back">
@@ -32,7 +32,11 @@ export default function Project() {
                     <div className="project__back_content">
                       <div className="project__back__description">
                         <div className="project__back__img">
-                          <a href={project.link} target="_blank">
+                          <a
+                            href={project.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <img src={project.show} alt={project.name} />
                           </a>
                         </div>
