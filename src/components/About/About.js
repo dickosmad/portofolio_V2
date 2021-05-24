@@ -77,7 +77,6 @@ export default function About() {
                   See My Work
                 </MDBBtn>
               </Link>
-
               <MDBRow>
                 <MDBCol xs="12" md="12" lg="12" sm="12">
                   <div style={{ paddingTop: 40 }} className="social-icons">

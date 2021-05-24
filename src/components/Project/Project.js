@@ -53,7 +53,7 @@ export default function Project() {
                       <div className="project__site">
                         <p>
                           {" "}
-                          <a href={project.link}>{project.siteName} </a>
+                          <a href={project.link}>{project.siteName}</a>
                         </p>
                       </div>
                     </div>

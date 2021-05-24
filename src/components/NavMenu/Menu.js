@@ -52,13 +52,14 @@ export default class Menu extends Component {
                 </Link>
               </MDBNavItem>
               <MDBNavItem>
-                <Link
-                  smooth
+                <a
                   className="nav-link"
-                  href="https://dickosmad.hashnode.dev/"
+                  href="https://dickosmad.hashnode.dev"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Blog
-                </Link>
+                </a>
               </MDBNavItem>
               <MDBNavItem>
                 <Link smooth className="nav-link" to="/#contact">

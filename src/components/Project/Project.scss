@@ -184,6 +184,7 @@
   
   
   .project__site {
+    
     position:absolute;
     left:0;
     bottom:0;
@@ -192,11 +193,21 @@
     align-items:center;
     margin-bottom:23px;
     margin-left:33px;
+    width: 100%;
     p{
+      
         margin-bottom: 0;
        color: #d8d8d8;
         line-height: 20px;
+        width: 100%;
+        a{
+        cursor: pointer;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        }
        }
+      
   }
   
   @media (max-width: 1305px) {
